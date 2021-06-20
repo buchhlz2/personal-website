@@ -9,22 +9,38 @@ import profile from '../images/profile.jpeg'
 
 const BasicInfo = (props) => {
 	useEffect(() => {
-		const cursorTypingArea = document.querySelector('#cursorTypingArea')
-		init(cursorTypingArea, {
+		const typingArea = document.querySelector('#typingArea')
+		init(typingArea, {
 			showCursor: false,
-			strings: ['fullstack engineer', 'physics nerd', 'crypto altruist', 'bio-hacking one day at a time...'],
+			strings: [
+				'fullstack engineer',
+				'physics nerd',
+				'crypto altruist',
+				'health fanatic',
+				'bio-hacking one day at a time...',
+			],
 		})
 	}, [])
 
 	return (
 		<div className='container-fluid d-flex'>
-			<div>
-				<div className='align-middle text-center header-social'>
-					<div className='polaroid'>
-						<span style={{ cursor: 'auto' }}>
-							<img src={profile} alt='Avatar placeholder' />
-						</span>
+			<div className='align-middle text-center'>
+				<div className='polaroid'>
+					<span style={{ cursor: 'auto' }}>
+						<img src={profile} alt='Avatar placeholder' />
+					</span>
+				</div>
+				<div className=' mt-3 mb-3'>
+					<div id='typingAreaDiv'>
+						<div id='terminalSymbol'>
+							<b>$ </b>
+						</div>
+						<div id='typingArea'></div>
+						<div id='typingCursor'></div>
 					</div>
+				</div>
+
+				<div className='header-social'>
 					<div className='vertical-align-social'>
 						<a
 							className='social-link'
@@ -77,7 +93,6 @@ const BasicInfo = (props) => {
 					</div>
 				</div>
 			</div>
-			<div id='cursorTypingArea'></div>
 		</div>
 	)
 }

@@ -1,10 +1,8 @@
+@import 'styles/_custom.scss';
+
 .header-social {
-	width: 20em;
 	display: inline-block;
-	border-radius: 25px;
-	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+	width: 20em;
 }
 
 .vertical-align-social {
@@ -52,26 +50,66 @@
 }
 
 .polaroid img {
-	display: block;
+	display: inline-block;
 	max-width: 12em;
 	border-radius: 100%;
 	margin: 0 auto;
 }
 
 .polaroid span {
-	background: #ffffff;
+	background: $white;
 	display: inline-block;
 	margin-top: 2em;
 	padding: 0.2em;
 	text-align: center;
 	text-decoration: none;
-	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-	-webkit-transition: all 0.2s linear;
-	-moz-transition: all 0.2s linear;
-	transition: all 0.2s linear;
 	z-index: 0;
 	position: relative;
 	border-radius: 100%;
+}
+
+#typingAreaDiv {
+	width: 20em;
+	background-color: $white;
+	border: 1px solid $gray-400;
+	padding: 0.4em;
+	border-radius: $border-radius-pill;
+	margin: 2em;
+}
+
+#terminalSymbol {
+	display: inline;
+}
+
+#typingArea {
+	display: inline;
+	white-space: nowrap;
+}
+
+#typingCursor {
+	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	display: inline-block;
+	height: 1.5em;
+	vertical-align: middle;
+	border-right: 0.3em solid $gray-700; /* The typwriter cursor */
+	// white-space: nowrap; /* Keeps the content on a single line */
+	// margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+	letter-spacing: 0.3em; /* Adjust as needed */
+	animation: blink-caret 0.75s step-end infinite;
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+	from,
+	to {
+		border-color: transparent;
+	}
+	50% {
+		border-color: $gray-700;
+	}
+}
+
+#aboutMeCard {
+    -webkit-box-shadow: $box-shadow;
+	-moz-box-shadow: $box-shadow;
+	box-shadow: $box-shadow;
 }

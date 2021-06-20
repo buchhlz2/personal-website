@@ -6,7 +6,8 @@ import Portfolio from './components/Portfolio'
 import Footer from './components/Footer'
 import { Route, Switch } from 'react-router-dom'
 
-import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.scss'
 
 function App() {
 	return (

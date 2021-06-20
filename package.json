@@ -42,5 +42,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@iconify/icons-emojione": "^1.1.0",
+    "@iconify/icons-twemoji": "^1.1.2",
+    "@iconify/react": "^1.1.4",
+    "sass": "^1.35.1"
   }
 }
