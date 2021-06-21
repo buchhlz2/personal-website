@@ -1,10 +1,5 @@
 @import 'styles/_custom.scss';
 
-.header-social {
-	display: inline-block;
-	width: 20em;
-}
-
 .vertical-align-social {
 	-ms-transform: translateY(-20%);
 	transform: translateY(-20%);
@@ -68,8 +63,14 @@
 	border-radius: 100%;
 }
 
+#typingAreaContainer {
+	display: inline-block;
+}
+
 #typingAreaDiv {
-	width: 20em;
+	width: 70%;
+	white-space: nowrap; /* Keeps the content on a single line */
+	display: inline-block;
 	background-color: $white;
 	border: 1px solid $gray-400;
 	padding: 0.4em;
@@ -82,21 +83,20 @@
 }
 
 #typingArea {
-	display: inline;
+	display: inline-block;
 	white-space: nowrap;
 }
 
 #typingCursor {
-	overflow: hidden; /* Ensures the content is not revealed until the animation */
+	overflow: hidden;
 	display: inline-block;
-	height: 1.5em;
+	height: 1.1em;
 	vertical-align: middle;
-	border-right: 0.3em solid $gray-700; /* The typwriter cursor */
-	// white-space: nowrap; /* Keeps the content on a single line */
-	// margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-	letter-spacing: 0.3em; /* Adjust as needed */
+	border-right: 0.4em solid $gray-700; /* The typwriter cursor */
+	letter-spacing: 0.4em;
 	animation: blink-caret 0.75s step-end infinite;
 }
+
 /* The typewriter cursor effect */
 @keyframes blink-caret {
 	from,
@@ -109,7 +109,7 @@
 }
 
 #aboutMeCard {
-    -webkit-box-shadow: $box-shadow;
+	-webkit-box-shadow: $box-shadow;
 	-moz-box-shadow: $box-shadow;
 	box-shadow: $box-shadow;
 }

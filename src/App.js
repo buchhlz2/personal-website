@@ -1,5 +1,4 @@
 import Navbar from './components/Navbar'
-import BasicInfo from './components/BasicInfo'
 import About from './components/About'
 import Skillset from './components/Skillset'
 import Portfolio from './components/Portfolio'
