@@ -2,8 +2,8 @@ import React from 'react'
 import SocialIcons from './SocialIcons'
 
 const socialIconsStyle = {
-	fontSize: '180%',
-	margin: '0 1em',
+	fontSize: '160%',
+	margin: '0 0.8em',
 }
 
 const Footer = (props) => {

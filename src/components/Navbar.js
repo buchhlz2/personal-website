@@ -6,51 +6,74 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 const Navbar = (props) => {
 	const { pathname } = useLocation()
 
-	const clickHandler = () => {
-		const nav = document.getElementById('nav-content')
-		if (nav.classList.contains('show-nav')) {
-			nav.classList.remove('show-nav')
+	const navCollapsedClickHandler = () => {
+		const navContent = document.getElementById('nav-content')
+		if (navContent.classList.contains('show-nav')) {
+			navContent.classList.remove('show-nav')
 		} else {
-			nav.classList.add('show-nav')
+			navContent.classList.add('show-nav')
 		}
 	}
 
 	return (
 		<nav className='bg-light fixed-top'>
-			<h1 className='text-center mt-5 mb-4 font-weight-bold text-uppercase'>
-				<b>Dan Buchholz</b>
-			</h1>
-
-			<div className='expand-nav-custom ms-3'>
-				<button className='btn-toggle-custom' onClick={clickHandler}>
-					<FontAwesomeIcon icon={faBars} style={{ fontSize: '200%' }} className='mx-auto' />
-				</button>
+			<div className='row'>
+				<div className='expand-nav-custom text-center'>
+					<button className='btn-toggle-custom' onClick={navCollapsedClickHandler}>
+						<FontAwesomeIcon icon={faBars} style={{ fontSize: '180%' }} className='mx-auto' />
+					</button>
+					<h1 className='font-weight-bold text-uppercase' id='name-title-expand'>
+						<b>Dan Buchholz</b>
+					</h1>
+				</div>
+				<h1 className='text-center mt-5 mb-3 font-weight-bold text-uppercase d-inline' id='name-title-collapse'>
+					<b>Dan Buchholz</b>
+				</h1>
 			</div>
-
-			<div className='col-md-12 collapse-nav-custom' id='nav-content'>
-				<ul className='nav justify-content-center'>
-					<div className='row'>
-						<li className='nav-item ps-3 pe-3'>
-							<NavLink to='/about' className='nav-link' isActive={() => ['/', '/header'].includes(pathname)} href='#'>
-								About
-							</NavLink>
-						</li>
-					</div>
-					<div className='row'>
-						<li className='nav-item ps-3 pe-3'>
-							<NavLink to='/skillset' className='nav-link' isActive={() => ['/skillset'].includes(pathname)} href='#'>
-								Skillset
-							</NavLink>
-						</li>
-					</div>
-					<div className='row'>
-						<li className='nav-item ps-3 pe-3'>
-							<NavLink to='/portfolio' className='nav-link' isActive={() => ['/portfolio'].includes(pathname)} href='#'>
-								Portfolio
-							</NavLink>
-						</li>
-					</div>
-				</ul>
+			<div className='row'>
+				<div className='col-md-12 collapse-nav-custom' id='nav-content'>
+					<ul className='nav justify-content-center'>
+						<div className='row'>
+							<li className='nav-item ps-3 pe-3'>
+								<NavLink
+									to='/about'
+									className='nav-link'
+									isActive={() => ['/', '/header'].includes(pathname)}
+									href='#'
+									onClick={navCollapsedClickHandler}
+								>
+									About
+								</NavLink>
+							</li>
+						</div>
+						<div className='row'>
+							<li className='nav-item ps-3 pe-3'>
+								<NavLink
+									to='/skillset'
+									className='nav-link'
+									isActive={() => ['/skillset'].includes(pathname)}
+									href='#'
+									onClick={navCollapsedClickHandler}
+								>
+									Skillset
+								</NavLink>
+							</li>
+						</div>
+						<div className='row'>
+							<li className='nav-item ps-3 pe-3'>
+								<NavLink
+									to='/portfolio'
+									className='nav-link'
+									isActive={() => ['/portfolio'].includes(pathname)}
+									href='#'
+									onClick={navCollapsedClickHandler}
+								>
+									Portfolio
+								</NavLink>
+							</li>
+						</div>
+					</ul>
+				</div>
 			</div>
 		</nav>
 	)

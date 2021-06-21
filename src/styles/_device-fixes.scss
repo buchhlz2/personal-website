@@ -1,0 +1,339 @@
+// Device fixes
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+	#main-content {
+		margin-top: 66px;
+	}
+
+	.collapse-nav-custom {
+		display: none;
+	}
+
+	.expand-nav-custom {
+		display: inline;
+	}
+
+	#name-title-collapse {
+		display: none !important;
+	}
+
+	#name-title-expand {
+		display: inline;
+	}
+
+	.polaroid img {
+		max-width: 120px;
+	}
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) {
+	#main-content {
+		margin-top: 66px;
+	}
+
+	.collapse-nav-custom {
+		display: none;
+	}
+
+	.expand-nav-custom {
+		display: inline;
+	}
+
+	#name-title-collapse {
+		display: none !important;
+	}
+
+	#name-title-expand {
+		display: inline;
+	}
+
+	.polaroid img {
+		max-width: 120px;
+	}
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+	#main-content {
+		margin-top: 66px;
+	}
+
+	.collapse-nav-custom {
+		display: none;
+	}
+
+	.expand-nav-custom {
+		display: inline;
+	}
+
+	#name-title-collapse {
+		display: none !important;
+	}
+
+	#name-title-expand {
+		display: inline;
+	}
+
+	.polaroid img {
+		max-width: 120px;
+	}
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+	#main-content {
+		margin-top: 66px;
+	}
+
+	.collapse-nav-custom {
+		display: none;
+	}
+
+	.expand-nav-custom {
+		display: inline;
+	}
+
+	#name-title-collapse {
+		display: none !important;
+	}
+
+	#name-title-expand {
+		display: inline;
+	}
+
+	.polaroid img {
+		max-width: 120px;
+	}
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	#main-content {
+		margin-top: 66px;
+	}
+
+	.collapse-nav-custom {
+		display: none;
+	}
+
+	.expand-nav-custom {
+		display: inline;
+	}
+
+	#name-title-collapse {
+		display: none !important;
+	}
+
+	#name-title-expand {
+		display: inline;
+	}
+
+	.polaroid img {
+		max-width: 120px;
+	}
+}
+
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	#main-content {
+		margin-top: 66px;
+	}
+
+	.collapse-nav-custom {
+		display: none;
+	}
+
+	.expand-nav-custom {
+		display: inline;
+	}
+
+	#name-title-collapse {
+		display: none !important;
+	}
+
+	#name-title-expand {
+		display: inline;
+	}
+
+	.polaroid img {
+		max-width: 120px;
+	}
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+	#main-content {
+		margin-top: 66px;
+	}
+
+	.collapse-nav-custom {
+		display: none;
+	}
+
+	.expand-nav-custom {
+		display: inline;
+	}
+
+	#name-title-collapse {
+		display: none !important;
+	}
+
+	#name-title-expand {
+		display: inline;
+	}
+
+	.polaroid img {
+		max-width: 120px;
+	}
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	#main-content {
+		margin-top: 66px;
+	}
+
+	.collapse-nav-custom {
+		display: none;
+	}
+
+	.expand-nav-custom {
+		display: inline;
+	}
+
+	#name-title-collapse {
+		display: none !important;
+	}
+
+	#name-title-expand {
+		display: inline;
+	}
+
+	.polaroid img {
+		max-width: 120px;
+	}
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1112px) and (max-device-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	#main-content {
+		margin-top: 66px;
+	}
+
+	.collapse-nav-custom {
+		display: none;
+	}
+
+	.expand-nav-custom {
+		display: inline;
+	}
+
+	#name-title-collapse {
+		display: none !important;
+	}
+
+	#name-title-expand {
+		display: inline;
+	}
+
+	.polaroid img {
+		max-width: 120px;
+	}
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+	#main-content {
+		margin-top: 66px;
+	}
+
+	.collapse-nav-custom {
+		display: none;
+	}
+
+	.expand-nav-custom {
+		display: inline;
+	}
+
+	#name-title-collapse {
+		display: none !important;
+	}
+
+	#name-title-expand {
+		display: inline;
+	}
+
+	.polaroid img {
+		max-width: 120px;
+	}
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	#main-content {
+		margin-top: 66px;
+	}
+
+	.collapse-nav-custom {
+		display: none;
+	}
+
+	.expand-nav-custom {
+		display: inline;
+	}
+
+	#name-title-collapse {
+		display: none !important;
+	}
+
+	#name-title-expand {
+		display: inline;
+	}
+
+	.polaroid img {
+		max-width: 120px;
+	}
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+	#main-content {
+		margin-top: 66px;
+	}
+
+	.collapse-nav-custom {
+		display: none;
+	}
+
+	.expand-nav-custom {
+		display: inline;
+	}
+
+	#name-title-collapse {
+		display: none !important;
+	}
+
+	#name-title-expand {
+		display: inline;
+	}
+
+	.polaroid img {
+		max-width: 120px;
+	}
+}

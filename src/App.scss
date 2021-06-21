@@ -1,5 +1,9 @@
 @import 'styles/_custom.scss';
 
+#main-content {
+	margin-top: 165px;
+}
+
 .vertical-align-social {
 	-ms-transform: translateY(-20%);
 	transform: translateY(-20%);
@@ -46,7 +50,7 @@
 
 .polaroid img {
 	display: inline-block;
-	max-width: 12em;
+	max-width: 180px;
 	border-radius: 100%;
 	margin: 0 auto;
 }
@@ -115,7 +119,15 @@
 }
 
 .expand-nav-custom {
+	height: 45px;
+	margin: 0.5em auto;
+	padding: 0.5em 0;
 	display: none;
+}
+
+#name-title-collapse {
+	font-size: 3em;
+	height: 8vh;
 }
 
 .btn-toggle-custom {
@@ -124,6 +136,8 @@
 	border: 0;
 	background-color: inherit;
 	color: $link-color;
+	position: absolute;
+	left: 0;
 }
 
 .btn-toggle-custom:hover {
@@ -135,11 +149,31 @@
 }
 
 @include media-breakpoint-down(md) {
+	#main-content {
+		margin-top: 66px;
+	}
+
 	.collapse-nav-custom {
+		line-height: 10px;
 		display: none;
 	}
 
 	.expand-nav-custom {
 		display: inline;
 	}
+
+	#name-title-collapse {
+		display: none !important;
+	}
+
+	#name-title-expand {
+		display: inline;
+	}
+
+	.polaroid img {
+		max-width: 120px;
+	}
 }
+
+// Device fixes
+@import 'styles/_device-fixes.scss';

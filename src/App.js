@@ -12,7 +12,7 @@ function App() {
 	return (
 		<div className='App d-flex flex-column min-vh-100'>
 			<Navbar />
-			<div className='wrapper flex-grow-1' style={{ marginTop: '10em' }}>
+			<div className='wrapper flex-grow-1' id='main-content'>
 				<Switch>
 					<Route path='/(/|about|)/' render={(props) => <About {...props} />} />
 					<Route path='/(/|skillset|)/' render={(props) => <Skillset {...props} />} />

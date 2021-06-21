@@ -10,7 +10,7 @@ const About = (props) => {
 		<div className='container-fluid'>
 			<div className='row'>
 				<BasicInfo />
-				<div className='col-md-8 mt-5'>
+				<div className='col-md-8 mt-3'>
 					<div className='col-md-10 mx-auto'>
 						<div className='card' id='aboutMeCard'>
 							<div
