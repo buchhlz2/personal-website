@@ -113,3 +113,33 @@
 	-moz-box-shadow: $box-shadow;
 	box-shadow: $box-shadow;
 }
+
+.expand-nav-custom {
+	display: none;
+}
+
+.btn-toggle-custom {
+	box-shadow: none;
+	border-radius: 0;
+	border: 0;
+	background-color: inherit;
+	color: $link-color;
+}
+
+.btn-toggle-custom:hover {
+	color: $gray-600;
+}
+
+.show-nav {
+	display: block !important;
+}
+
+@include media-breakpoint-down(md) {
+	.collapse-nav-custom {
+		display: none;
+	}
+
+	.expand-nav-custom {
+		display: inline;
+	}
+}
