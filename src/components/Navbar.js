@@ -10,13 +10,16 @@ const Navbar = (props) => {
 	const nav = useRef(null)
 	const navToggleIcon = useRef(null)
 
-	// make sure that 'hide-nav' & 'show-nav' are removed, on screen resizing from small to large
+	// make sure that 'hide-nav', 'show-nav', 'rotate', and 'rotate-opposite' are all removed
+	// ensures styling issue does not happen on screen resizing from <= md to larger
 	useEffect(() => {
 		function checkNavToggleBtnOnResize() {
 			let btnIsShowing = !!collapsedNavMenu.current.clientHeight
 			if (!btnIsShowing) {
 				nav.current.classList.remove('hide-nav')
 				nav.current.classList.remove('show-nav')
+				navToggleIcon.current.classList.remove('rotate')
+				navToggleIcon.current.classList.remove('rotate-opposite')
 			}
 		}
 
@@ -64,7 +67,7 @@ const Navbar = (props) => {
 				<div className='col-md-12 normal-nav-custom' id='nav-list-items' ref={nav}>
 					<ul className='nav justify-content-center'>
 						<div className='row'>
-							<li className='nav-item mx-5'>
+							<li className='nav-item me-5 text-center'>
 								<NavLink
 									to='/about'
 									className='nav-link'
@@ -77,7 +80,7 @@ const Navbar = (props) => {
 							</li>
 						</div>
 						<div className='row'>
-							<li className='nav-item mx-5'>
+							<li className='nav-item me-5 text-center'>
 								<NavLink
 									to='/skillset'
 									className='nav-link'
@@ -90,7 +93,7 @@ const Navbar = (props) => {
 							</li>
 						</div>
 						<div className='row'>
-							<li className='nav-item mx-5'>
+							<li className='nav-item me-5 text-center'>
 								<NavLink
 									to='/portfolio'
 									className='nav-link'

@@ -56,10 +56,10 @@
 }
 
 .polaroid span {
-	background: $white;
+	background: $gray-300;
 	display: inline-block;
-	margin-top: 2em;
-	padding: 0.2em;
+	margin-top: 30px;
+	padding: 2px;
 	text-align: center;
 	text-decoration: none;
 	z-index: 0;
@@ -69,17 +69,20 @@
 
 #typingAreaContainer {
 	display: inline-block;
+	margin: 0 auto;
+	min-width: 180px;
+	max-width: 250px;
 }
 
 #typingAreaDiv {
-	width: 70%;
+	width: 100%;
 	white-space: nowrap; /* Keeps the content on a single line */
 	display: inline-block;
 	background-color: $white;
 	border: 1px solid $gray-400;
 	padding: 0.4em;
 	border-radius: $border-radius-pill;
-	margin: 2em;
+	margin: 20px auto 0 auto;
 }
 
 #terminalSymbol {
@@ -134,7 +137,7 @@
 #about-icon-div {
 	top: 0;
 	left: 0;
-	padding: 4px 0;
+	padding: 3px 0;
 	margin-left: 5px;
 }
 

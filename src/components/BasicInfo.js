@@ -12,7 +12,7 @@ const BasicInfo = (props) => {
 	}, [])
 
 	return (
-		<div className='col-md-4'>
+		<div className='col-md-4 mb-4'>
 			<div className='align-middle text-center'>
 				<div className='row'>
 					<div className='polaroid'>

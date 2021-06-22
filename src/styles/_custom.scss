@@ -1,7 +1,11 @@
 // custom scss generated from: https://bootswatch.com/
 
 // overrides
+$font-family-sans-serif: 'Source Sans Pro', Helvetica, sans-serif;
 
 @import './_variables';
+$body-bg: $gray-100;
+$nav-link-hover-color: $gray-800;
+
 @import '~bootstrap/scss/bootstrap';
 @import './_bootswatch';
