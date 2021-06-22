@@ -1,4 +1,5 @@
 // Device fixes
+
 /* ----------- iPad 1, 2, Mini and Air ----------- */
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
@@ -7,13 +8,27 @@
 	}
 
 	.normal-nav-custom {
-		line-height: 10px;
 		height: 0;
 		overflow: hidden;
 	}
 
 	.collapsed-nav-custom {
 		display: inline;
+	}
+
+	.nav-item {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		top: 0 !important;
+		border-bottom: 1px solid $border-color;
+		& {
+			background-color: $gray-300;
+		}
 	}
 
 	#name-title-collapse {
@@ -36,13 +51,27 @@
 	}
 
 	.normal-nav-custom {
-		line-height: 10px;
 		height: 0;
 		overflow: hidden;
 	}
 
 	.collapsed-nav-custom {
 		display: inline;
+	}
+
+	.nav-item {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		top: 0 !important;
+		border-bottom: 1px solid $border-color;
+		& {
+			background-color: $gray-300;
+		}
 	}
 
 	#name-title-collapse {
@@ -65,13 +94,27 @@
 	}
 
 	.normal-nav-custom {
-		line-height: 10px;
 		height: 0;
 		overflow: hidden;
 	}
 
 	.collapsed-nav-custom {
 		display: inline;
+	}
+
+	.nav-item {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		top: 0 !important;
+		border-bottom: 1px solid $border-color;
+		& {
+			background-color: $gray-300;
+		}
 	}
 
 	#name-title-collapse {
@@ -96,13 +139,27 @@
 	}
 
 	.normal-nav-custom {
-		line-height: 10px;
 		height: 0;
 		overflow: hidden;
 	}
 
 	.collapsed-nav-custom {
 		display: inline;
+	}
+
+	.nav-item {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		top: 0 !important;
+		border-bottom: 1px solid $border-color;
+		& {
+			background-color: $gray-300;
+		}
 	}
 
 	#name-title-collapse {
@@ -125,13 +182,27 @@
 	}
 
 	.normal-nav-custom {
-		line-height: 10px;
 		height: 0;
 		overflow: hidden;
 	}
 
 	.collapsed-nav-custom {
 		display: inline;
+	}
+
+	.nav-item {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		top: 0 !important;
+		border-bottom: 1px solid $border-color;
+		& {
+			background-color: $gray-300;
+		}
 	}
 
 	#name-title-collapse {
@@ -154,13 +225,27 @@
 	}
 
 	.normal-nav-custom {
-		line-height: 10px;
 		height: 0;
 		overflow: hidden;
 	}
 
 	.collapsed-nav-custom {
 		display: inline;
+	}
+
+	.nav-item {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		top: 0 !important;
+		border-bottom: 1px solid $border-color;
+		& {
+			background-color: $gray-300;
+		}
 	}
 
 	#name-title-collapse {
@@ -185,13 +270,27 @@
 	}
 
 	.normal-nav-custom {
-		line-height: 10px;
 		height: 0;
 		overflow: hidden;
 	}
 
 	.collapsed-nav-custom {
 		display: inline;
+	}
+
+	.nav-item {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		top: 0 !important;
+		border-bottom: 1px solid $border-color;
+		& {
+			background-color: $gray-300;
+		}
 	}
 
 	#name-title-collapse {
@@ -216,13 +315,27 @@
 	}
 
 	.normal-nav-custom {
-		line-height: 10px;
 		height: 0;
 		overflow: hidden;
 	}
 
 	.collapsed-nav-custom {
 		display: inline;
+	}
+
+	.nav-item {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		top: 0 !important;
+		border-bottom: 1px solid $border-color;
+		& {
+			background-color: $gray-300;
+		}
 	}
 
 	#name-title-collapse {
@@ -247,13 +360,27 @@
 	}
 
 	.normal-nav-custom {
-		line-height: 10px;
 		height: 0;
 		overflow: hidden;
 	}
 
 	.collapsed-nav-custom {
 		display: inline;
+	}
+
+	.nav-item {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		top: 0 !important;
+		border-bottom: 1px solid $border-color;
+		& {
+			background-color: $gray-300;
+		}
 	}
 
 	#name-title-collapse {
@@ -278,13 +405,27 @@
 	}
 
 	.normal-nav-custom {
-		line-height: 10px;
 		height: 0;
 		overflow: hidden;
 	}
 
 	.collapsed-nav-custom {
 		display: inline;
+	}
+
+	.nav-item {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		top: 0 !important;
+		border-bottom: 1px solid $border-color;
+		& {
+			background-color: $gray-300;
+		}
 	}
 
 	#name-title-collapse {
@@ -309,13 +450,27 @@
 	}
 
 	.normal-nav-custom {
-		line-height: 10px;
 		height: 0;
 		overflow: hidden;
 	}
 
 	.collapsed-nav-custom {
 		display: inline;
+	}
+
+	.nav-item {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		top: 0 !important;
+		border-bottom: 1px solid $border-color;
+		& {
+			background-color: $gray-300;
+		}
 	}
 
 	#name-title-collapse {
@@ -340,13 +495,27 @@
 	}
 
 	.normal-nav-custom {
-		line-height: 10px;
 		height: 0;
 		overflow: hidden;
 	}
 
 	.collapsed-nav-custom {
 		display: inline;
+	}
+
+	.nav-item {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		top: 0 !important;
+		border-bottom: 1px solid $border-color;
+		& {
+			background-color: $gray-300;
+		}
 	}
 
 	#name-title-collapse {

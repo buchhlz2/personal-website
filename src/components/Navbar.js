@@ -2,13 +2,13 @@ import React, { useRef, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = (props) => {
 	const { pathname } = useLocation()
 
 	const collapsedNavMenu = useRef(null)
 	const nav = useRef(null)
+	const navToggleIcon = useRef(null)
 
 	// make sure that 'hide-nav' & 'show-nav' are removed, on screen resizing from small to large
 	useEffect(() => {
@@ -27,13 +27,17 @@ const Navbar = (props) => {
 
 	const navCollapsedClickHandler = () => {
 		const navIsShowing = nav.current.classList.contains('show-nav')
-		const navToggleBtnIsShowings = !!collapsedNavMenu.current.clientHeight
+		const navToggleBtnIsShowing = !!collapsedNavMenu.current.clientHeight
 
-		if (navToggleBtnIsShowings) {
+		if (navToggleBtnIsShowing) {
 			if (navIsShowing) {
+				navToggleIcon.current.classList.add('rotate-opposite')
+				navToggleIcon.current.classList.remove('rotate')
 				nav.current.classList.add('hide-nav')
 				nav.current.classList.remove('show-nav')
 			} else {
+				navToggleIcon.current.classList.add('rotate')
+				navToggleIcon.current.classList.remove('rotate-opposite')
 				nav.current.classList.add('show-nav')
 				nav.current.classList.remove('hide-nav')
 			}
@@ -44,7 +48,7 @@ const Navbar = (props) => {
 		<nav className='bg-light fixed-top'>
 			<div className='row'>
 				<div className='collapsed-nav-custom text-center' ref={collapsedNavMenu}>
-					<button onClick={navCollapsedClickHandler} id='nav-toggle-btn'>
+					<button onClick={navCollapsedClickHandler} id='nav-toggle-btn' ref={navToggleIcon}>
 						<FontAwesomeIcon icon={faBars} style={{ fontSize: '180%' }} className='mx-auto' />
 					</button>
 					<h1 className='font-weight-bold text-uppercase' id='name-title-expand'>
@@ -98,16 +102,6 @@ const Navbar = (props) => {
 								</NavLink>
 							</li>
 						</div>
-						{/* <div className='row'>
-							<button className='btn-close-custom ml-auto' onClick={navCollapsedClickHandler}>
-								<FontAwesomeIcon
-									icon={faTimes}
-									style={{ fontSize: '200%', height: '100%' }}
-									className=''
-									id='nav-close'
-								/>
-							</button>
-						</div> */}
 					</ul>
 				</div>
 			</div>
