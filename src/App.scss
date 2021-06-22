@@ -118,7 +118,7 @@
 	box-shadow: $box-shadow;
 }
 
-.expand-nav-custom {
+.collapsed-nav-custom {
 	height: 45px;
 	margin: 0.5em auto;
 	padding: 0.5em 0;
@@ -130,7 +130,11 @@
 	height: 8vh;
 }
 
-.btn-toggle-custom {
+#nav-close {
+	display: none;
+}
+
+#nav-toggle-btn {
 	box-shadow: none;
 	border-radius: 0;
 	border: 0;
@@ -140,12 +144,18 @@
 	left: 0;
 }
 
-.btn-toggle-custom:hover {
+#nav-toggle-btn:hover {
 	color: $gray-600;
 }
 
 .show-nav {
-	display: block !important;
+	height: 30px !important;
+	transition: all 0.5s ease;
+}
+
+.hide-nav {
+	height: 0 !important;
+	transition: all 0.5s ease;
 }
 
 @include media-breakpoint-down(md) {
@@ -153,13 +163,18 @@
 		margin-top: 66px;
 	}
 
-	.collapse-nav-custom {
+	.normal-nav-custom {
 		line-height: 10px;
-		display: none;
+		height: 0;
+		overflow: hidden;
 	}
 
-	.expand-nav-custom {
+	.collapsed-nav-custom {
 		display: inline;
+	}
+
+	#nav-close {
+		// display: inline;
 	}
 
 	#name-title-collapse {

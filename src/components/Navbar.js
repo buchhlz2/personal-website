@@ -1,25 +1,50 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 const Navbar = (props) => {
 	const { pathname } = useLocation()
 
+	const collapsedNavMenu = useRef(null)
+	const nav = useRef(null)
+
+	// make sure that 'hide-nav' & 'show-nav' are removed, on screen resizing from small to large
+	useEffect(() => {
+		function checkNavToggleBtnOnResize() {
+			let btnIsShowing = !!collapsedNavMenu.current.clientHeight
+			if (!btnIsShowing) {
+				nav.current.classList.remove('hide-nav')
+				nav.current.classList.remove('show-nav')
+			}
+		}
+
+		window.addEventListener('resize', checkNavToggleBtnOnResize)
+		checkNavToggleBtnOnResize()
+		return () => window.removeEventListener('resize', checkNavToggleBtnOnResize)
+	}, [])
+
 	const navCollapsedClickHandler = () => {
-		const navContent = document.getElementById('nav-content')
-		if (navContent.classList.contains('show-nav')) {
-			navContent.classList.remove('show-nav')
-		} else {
-			navContent.classList.add('show-nav')
+		const navIsShowing = nav.current.classList.contains('show-nav')
+		const navToggleBtnIsShowings = !!collapsedNavMenu.current.clientHeight
+
+		if (navToggleBtnIsShowings) {
+			if (navIsShowing) {
+				nav.current.classList.add('hide-nav')
+				nav.current.classList.remove('show-nav')
+			} else {
+				nav.current.classList.add('show-nav')
+				nav.current.classList.remove('hide-nav')
+			}
 		}
 	}
 
 	return (
 		<nav className='bg-light fixed-top'>
 			<div className='row'>
-				<div className='expand-nav-custom text-center'>
-					<button className='btn-toggle-custom' onClick={navCollapsedClickHandler}>
+				<div className='collapsed-nav-custom text-center' ref={collapsedNavMenu}>
+					<button onClick={navCollapsedClickHandler} id='nav-toggle-btn'>
 						<FontAwesomeIcon icon={faBars} style={{ fontSize: '180%' }} className='mx-auto' />
 					</button>
 					<h1 className='font-weight-bold text-uppercase' id='name-title-expand'>
@@ -30,15 +55,16 @@ const Navbar = (props) => {
 					<b>Dan Buchholz</b>
 				</h1>
 			</div>
+
 			<div className='row'>
-				<div className='col-md-12 collapse-nav-custom' id='nav-content'>
+				<div className='col-md-12 normal-nav-custom' id='nav-list-items' ref={nav}>
 					<ul className='nav justify-content-center'>
 						<div className='row'>
-							<li className='nav-item ps-3 pe-3'>
+							<li className='nav-item mx-5'>
 								<NavLink
 									to='/about'
 									className='nav-link'
-									isActive={() => ['/', '/header'].includes(pathname)}
+									isActive={() => ['/', '/about'].includes(pathname)}
 									href='#'
 									onClick={navCollapsedClickHandler}
 								>
@@ -47,7 +73,7 @@ const Navbar = (props) => {
 							</li>
 						</div>
 						<div className='row'>
-							<li className='nav-item ps-3 pe-3'>
+							<li className='nav-item mx-5'>
 								<NavLink
 									to='/skillset'
 									className='nav-link'
@@ -60,7 +86,7 @@ const Navbar = (props) => {
 							</li>
 						</div>
 						<div className='row'>
-							<li className='nav-item ps-3 pe-3'>
+							<li className='nav-item mx-5'>
 								<NavLink
 									to='/portfolio'
 									className='nav-link'
@@ -72,6 +98,16 @@ const Navbar = (props) => {
 								</NavLink>
 							</li>
 						</div>
+						{/* <div className='row'>
+							<button className='btn-close-custom ml-auto' onClick={navCollapsedClickHandler}>
+								<FontAwesomeIcon
+									icon={faTimes}
+									style={{ fontSize: '200%', height: '100%' }}
+									className=''
+									id='nav-close'
+								/>
+							</button>
+						</div> */}
 					</ul>
 				</div>
 			</div>
