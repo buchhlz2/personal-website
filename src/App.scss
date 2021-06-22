@@ -112,10 +112,30 @@
 	}
 }
 
-#aboutMeCard {
+#about-me-card {
 	-webkit-box-shadow: $box-shadow;
 	-moz-box-shadow: $box-shadow;
 	box-shadow: $box-shadow;
+}
+
+.card-header {
+	background: #6d6d6d;
+	color: white;
+	height: 20px;
+	align-items: center;
+}
+
+#about-me-content {
+	font-family: 'IBM Plex Mono', monospace;
+	height: auto;
+	background: $white;
+}
+
+#about-icon-div {
+	top: 0;
+	left: 0;
+	padding: 4px 0;
+	margin-left: 5px;
 }
 
 .collapsed-nav-custom {
