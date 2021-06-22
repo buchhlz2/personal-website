@@ -37,7 +37,7 @@ const About = (props) => {
 									</div>
 									<div className='card-body font-trebuchet text-justify ml-3 mr-3' id='about-me-content'>
 										<p>
-											<b>NAME</b>="DAN BUCHHOLZ" <span className='text-muted fw-lighter'> # pronounced: BOO-KOLTS</span>
+											<b>NAME</b>="Dan Buchholz" <span className='text-muted fw-lighter'> # pronounced: BOO-KOLTS</span>
 										</p>
 
 										<p>
