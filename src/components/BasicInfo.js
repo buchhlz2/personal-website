@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { init } from 'ityped'
-import profile from '../images/profile.jpeg'
+import profile from '../images/profile.png'
 
 const BasicInfo = (props) => {
 	useEffect(() => {

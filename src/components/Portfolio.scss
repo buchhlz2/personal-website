@@ -1,0 +1,36 @@
+.portfolio-item {
+	cursor: pointer;
+	background-color: $white;
+	-webkit-box-shadow: $box-shadow;
+	-moz-box-shadow: $box-shadow;
+	box-shadow: $box-shadow;
+	border: 1px solid $border-color;
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.portfolio-item:hover {
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+	transform: scale(1.05);
+	box-shadow: 5px 5px 30px rgba(darken($body-bg, 50%), 0.2), -5px -5px 30px rgba($white, 0.4);
+}
+
+.portfolio-btn {
+	padding: 5px 8px;
+	border-radius: 5px;
+}
+
+.modal-content {
+	background-color: $white;
+}
+
+@include media-breakpoint-down(lg) {
+	.portfolio-item {
+		width: 60%;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	.portfolio-item {
+		width: 75%;
+	}
+}

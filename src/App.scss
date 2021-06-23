@@ -1,4 +1,6 @@
+// import custom bootstrap & component-specific styles
 @import 'styles/_custom.scss';
+@import 'components/Portfolio.scss';
 
 #main-content {
 	margin-top: 165px;
@@ -56,15 +58,17 @@
 }
 
 .polaroid span {
-	background: $gray-300;
+	background: $white;
 	display: inline-block;
 	margin-top: 30px;
-	padding: 2px;
 	text-align: center;
 	text-decoration: none;
 	z-index: 0;
 	position: relative;
 	border-radius: 100%;
+	-webkit-box-shadow: $box-shadow-inset;
+	-moz-box-shadow: $box-shadow-inset;
+	box-shadow: $box-shadow-inset;
 }
 
 #typingAreaContainer {
@@ -121,7 +125,7 @@
 	box-shadow: $box-shadow;
 }
 
-.card-header {
+#about-me-card-header {
 	background: #6d6d6d;
 	color: white;
 	height: 20px;

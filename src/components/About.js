@@ -17,6 +17,7 @@ const About = (props) => {
 								<div className='card' id='about-me-card'>
 									<div
 										className='card-header d-flex'
+										id='about-me-card-header'
 										style={{
 											background: '#6d6d6d',
 											color: 'white',
