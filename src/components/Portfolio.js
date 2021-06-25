@@ -28,19 +28,21 @@ const portfolioItems = [
 const Portfolio = (props) => {
 	return (
 		<div className='container-fluid px-5'>
-			<div className='row gx-3 gy-3 mt-3'>
-				{portfolioItems.map((item, index) => (
-					<div className='col-lg-4' key={index}>
-						<PortfolioItem
-							name={item.name}
-							url={item.url}
-							caption={item.caption}
-							description={item.description}
-							img={item.img}
-							index={index}
-						/>
-					</div>
-				))}
+			<div className='col-10 mx-auto'>
+				<div className='row gx-3 gy-3 mt-3'>
+					{portfolioItems.map((item, index) => (
+						<div className='col-lg-4' key={index}>
+							<PortfolioItem
+								name={item.name}
+								url={item.url}
+								caption={item.caption}
+								description={item.description}
+								img={item.img}
+								index={index}
+							/>
+						</div>
+					))}
+				</div>
 			</div>
 		</div>
 	)

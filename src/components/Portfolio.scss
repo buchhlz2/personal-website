@@ -19,6 +19,10 @@
 	border-radius: 5px;
 }
 
+.portfolio-card-title {
+	color: darken($body-color, 20%) !important;
+}
+
 .modal-content {
 	background-color: $white;
 }

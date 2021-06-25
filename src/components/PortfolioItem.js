@@ -12,7 +12,7 @@ const PortfolioItem = (props) => {
 				data-bs-target={`#portfolio-item-modal-${props.index}`}
 			>
 				<div className='card-body'>
-					<h3 className='card-title'>{props.name}</h3>
+					<h5 className='portfolio-card-title'>{props.name}</h5>
 					<img src={props.img} className='card-img' alt='project-pic' />
 					<p className='card-text'>{props.caption}</p>
 				</div>
