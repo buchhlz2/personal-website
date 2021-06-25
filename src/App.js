@@ -27,7 +27,7 @@ function App() {
 			<div
 				className={animate ? 'App d-flex flex-column min-vh-100 intial-page-load' : 'App d-flex flex-column min-vh-100'}
 			>
-				<Navbar animate={animate} />
+				<Navbar />
 				<div className='wrapper flex-grow-1' id='main-content'>
 					<Switch>
 						<Route path='/(/|about|)/' render={(props) => <About {...props} />} />
