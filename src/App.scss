@@ -6,11 +6,6 @@
 	margin-top: 165px;
 }
 
-.vertical-align-social {
-	-ms-transform: translateY(-20%);
-	transform: translateY(-20%);
-}
-
 .header-social-icons {
 	cursor: pointer;
 	transition: all 0.1s ease-in-out;
@@ -24,25 +19,19 @@
 	text-decoration: none !important;
 }
 
-.header-social-icons:hover {
-	-webkit-transform: scale(0.9);
-	-moz-transform: scale(0.9);
-	-ms-transform: scale(0.9);
-	-o-transform: scale(0.9);
-	transform: scale(0.9);
-	-webkit-transition: all 0.1s ease;
-	-moz-transition: all 0.1s ease;
-	-ms-transition: all 0.1s ease;
-	-o-transition: all 0.1s ease;
-	transition: all 0.1s ease;
+.card-link,
+.card-link:hover,
+.card-link:focus,
+.card-link:active {
+	text-decoration: none !important;
 }
 
-.header-social-icons:active {
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	-ms-transform: scale(0.8);
-	-o-transform: scale(0.8);
-	transform: scale(0.8);
+.header-social-icons:hover {
+	-webkit-transform: translateY(-15%);
+	-moz-transform: translateY(-15%);
+	-ms-transform: translateY(-15%);
+	-o-transform: translateY(-15%);
+	transform: translateY(-15%);
 	-webkit-transition: all 0.1s ease;
 	-moz-transition: all 0.1s ease;
 	-ms-transition: all 0.1s ease;
@@ -52,7 +41,7 @@
 
 .polaroid img {
 	display: inline-block;
-	max-width: 180px;
+	max-width: 240px;
 	border-radius: 100%;
 	margin: 0 auto;
 }
@@ -173,21 +162,21 @@
 
 .rotate {
 	transform: rotate(90deg);
-	transition: all 0.5s ease;
+	transition: all 0.3s ease;
 }
 
 .rotate-opposite {
-	transition: all 0.5s ease;
+	transition: all 0.3s ease;
 }
 
 .show-nav {
 	height: 121px !important;
-	transition: all 0.5s ease;
+	transition: all 0.3s ease;
 }
 
 .hide-nav {
 	height: 0 !important;
-	transition: all 0.5s ease;
+	transition: all 0.3s ease;
 }
 
 .btn-close:focus,
@@ -199,6 +188,10 @@
 	animation: fadein 0.8s ease;
 }
 
+hr {
+	border-top: 1px $text-muted solid;
+}
+
 @keyframes fadein {
 	from {
 		opacity: 0;
@@ -208,7 +201,7 @@
 	}
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
 	#main-content {
 		margin-top: 66px;
 	}
@@ -246,7 +239,7 @@
 	}
 
 	.polaroid img {
-		max-width: 120px;
+		max-width: 160px;
 	}
 }
 

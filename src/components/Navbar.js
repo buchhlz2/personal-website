@@ -54,12 +54,12 @@ const Navbar = (props) => {
 					<button onClick={navCollapsedClickHandler} id='nav-toggle-btn' ref={navToggleIcon}>
 						<FontAwesomeIcon icon={faBars} style={{ fontSize: '180%' }} className='mx-auto' />
 					</button>
-					<h1 className='font-weight-bold text-uppercase' id='name-title-expand'>
-						<b>Dan Buchholz</b>
+					<h1 className='' id='name-title-expand'>
+						Dan Buchholz
 					</h1>
 				</div>
-				<h1 className='text-center mt-5 mb-3 font-weight-bold text-uppercase d-inline' id='name-title-collapse'>
-					<b>Dan Buchholz</b>
+				<h1 className='text-center mt-5 mb-3 d-inline' id='name-title-collapse'>
+					Dan Buchholz
 				</h1>
 			</div>
 

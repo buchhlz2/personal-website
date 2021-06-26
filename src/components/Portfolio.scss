@@ -1,17 +1,16 @@
 .portfolio-item {
-	cursor: pointer;
 	background-color: $white;
 	-webkit-box-shadow: $box-shadow;
 	-moz-box-shadow: $box-shadow;
 	box-shadow: $box-shadow;
 	border: 1px solid $border-color;
-	transition: transform 0.15s ease, box-shadow 0.15s ease;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .portfolio-item:hover {
-	transition: transform 0.15s ease, box-shadow 0.15s ease;
-	transform: scale(1.05);
-	box-shadow: 5px 5px 30px rgba(darken($body-bg, 50%), 0.2), -5px -5px 30px rgba($white, 0.4);
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	transform: translateY(-4px);
+	box-shadow: 5px 9px 10px rgba(darken($body-bg, 50%), 0.2), -5px -1px 10px rgba($white, 0.4);
 }
 
 .portfolio-btn {
@@ -27,14 +26,20 @@
 	background-color: $white;
 }
 
-@include media-breakpoint-down(lg) {
-	.portfolio-item {
-		width: 60%;
-	}
+.info-btn-custom {
+	color: inherit;
+	border: none;
+	border: 1px $dark !important;
+	box-shadow: none;
 }
 
-@include media-breakpoint-down(md) {
-	.portfolio-item {
-		width: 75%;
-	}
+.info-btn-custom:hover {
+	// color: darken($body-color, 20%) !important;
+	background-color: lighten($body-color, 20%) !important;
+	box-shadow: none;
+}
+.info-btn-custom:focus,
+.info-btn-custom:active .btn-close:focus,
+.btn-close:active {
+	box-shadow: none;
 }

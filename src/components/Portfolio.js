@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import PortfolioItem from './PortfolioItem'
 
 const portfolioItems = [
@@ -23,27 +23,62 @@ const portfolioItems = [
 		description: 'desc 3',
 		img: 'https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_1280.jpg',
 	},
+	{
+		name: 'Name #4',
+		url: 'https://github.com/buchhlz2/',
+		caption: 'caption 4',
+		description: 'desc 4',
+		img: 'https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_1280.jpg',
+	},
 ]
 
 const Portfolio = (props) => {
+	const [formattedItems, setFormattedItems] = useState([])
+
+	useEffect(() => {
+		async function formatItemsToRows(items) {
+			await items
+			const rowToItemsObj = {}
+			let rowNumber = 0
+			const formattedRowsOfItems = []
+
+			await items.map(async (item, index) => {
+				if (index % 2 === 0) rowNumber++
+				const i = (
+					<PortfolioItem
+						name={item.name}
+						url={item.url}
+						caption={item.caption}
+						description={item.description}
+						img={item.img}
+						index={index}
+						key={index}
+					/>
+				)
+				rowToItemsObj[rowNumber] ? rowToItemsObj[rowNumber].push(i) : (rowToItemsObj[rowNumber] = [i])
+			})
+
+			for await (const [key, itemRow] of Object.entries(rowToItemsObj)) {
+				formattedRowsOfItems.push(
+					<div className='row gx-3 gy-3 mt-3' key={key}>
+						{itemRow.map((item) => (
+							<div className='col-md-6' key={item.key}>
+								{item}
+							</div>
+						))}
+					</div>
+				)
+			}
+
+			setFormattedItems(formattedRowsOfItems)
+		}
+
+		formatItemsToRows(portfolioItems)
+	}, [setFormattedItems])
+
 	return (
 		<div className='container-fluid px-5'>
-			<div className='col-10 mx-auto'>
-				<div className='row gx-3 gy-3 mt-3'>
-					{portfolioItems.map((item, index) => (
-						<div className='col-lg-4' key={index}>
-							<PortfolioItem
-								name={item.name}
-								url={item.url}
-								caption={item.caption}
-								description={item.description}
-								img={item.img}
-								index={index}
-							/>
-						</div>
-					))}
-				</div>
-			</div>
+			<div className='col-md-10 mx-auto'>{formattedItems.map((row) => row)}</div>
 		</div>
 	)
 }

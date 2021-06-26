@@ -1,7 +1,9 @@
 // custom scss generated from: https://bootswatch.com/
 
 // overrides
-$font-family-sans-serif: 'Source Sans Pro', Helvetica, sans-serif;
+// $font-family-sans-serif: 'Source Sans Pro', Helvetica, sans-serif;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+	'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 
 @import './_variables';
 $body-bg: $gray-100;
