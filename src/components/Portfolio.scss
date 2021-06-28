@@ -22,8 +22,22 @@
 	color: darken($body-color, 20%) !important;
 }
 
+.modal-dialog {
+	max-width: 650px !important;
+}
+
 .modal-content {
 	background-color: $white;
+}
+
+.badge-custom {
+	text-decoration: none;
+	@include shadow();
+	box-shadow: none;
+}
+
+.badge-custom:hover {
+	background-color: lighten($gray-300, 5%) !important;
 }
 
 .info-btn-custom {

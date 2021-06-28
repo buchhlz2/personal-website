@@ -1,6 +1,10 @@
 import React from 'react'
 
 const PortfolioModal = (props) => {
+	const languages = (langs) => {
+		return `${langs.slice(0, langs.length - 1).join(', ')}, & ${langs[langs.length - 1]}`
+	}
+
 	return (
 		<div>
 			<div
@@ -18,14 +22,21 @@ const PortfolioModal = (props) => {
 							</h5>
 							<button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
 						</div>
-						<div className='modal-body'>
+						<div className='modal-body text-dark'>
 							<div className='container-fluid'>
 								<div className='row'>
 									<div className='col-md-12'>
 										<img src={props.img} className='card-img' alt='project-pic' />
 									</div>
 									<div className='col-md-12'>
-										<p>{props.description}</p>
+										<p>
+											<small>{props.description}</small>
+										</p>
+										<p>
+											<small>
+												<i>Built with {languages(props.languages)}</i>
+											</small>
+										</p>
 									</div>
 								</div>
 							</div>

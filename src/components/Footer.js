@@ -12,7 +12,9 @@ const Footer = (props) => {
 			<div className='copyright py-4 text-center'>
 				<div className='container'>
 					<SocialIcons style={socialIconsStyle} />
-					<small>Copyright &copy; Dan Buchholz</small>
+					<span className='mt-2 d-inline-block'>
+						<small>Copyright &copy; Dan Buchholz</small>
+					</span>
 				</div>
 			</div>
 		</footer>
