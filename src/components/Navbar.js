@@ -96,19 +96,6 @@ const Navbar = (props) => {
 						<div className='row'>
 							<li className='nav-item me-5 text-center'>
 								<NavLink
-									to='/experience'
-									className='nav-link'
-									isActive={() => ['/experience'].includes(pathname)}
-									href='#'
-									onClick={navCollapsedClickHandler}
-								>
-									Experience
-								</NavLink>
-							</li>
-						</div>
-						<div className='row'>
-							<li className='nav-item me-5 text-center'>
-								<NavLink
 									to='/skillset'
 									className='nav-link'
 									isActive={() => ['/skillset'].includes(pathname)}
@@ -116,6 +103,19 @@ const Navbar = (props) => {
 									onClick={navCollapsedClickHandler}
 								>
 									Skillset
+								</NavLink>
+							</li>
+						</div>
+						<div className='row'>
+							<li className='nav-item me-5 text-center'>
+								<NavLink
+									to='/experience'
+									className='nav-link'
+									isActive={() => ['/experience'].includes(pathname)}
+									href='#'
+									onClick={navCollapsedClickHandler}
+								>
+									Experience
 								</NavLink>
 							</li>
 						</div>
