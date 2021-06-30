@@ -55,9 +55,7 @@
 	z-index: 0;
 	position: relative;
 	border-radius: 100%;
-	-webkit-box-shadow: $box-shadow-inset;
-	-moz-box-shadow: $box-shadow-inset;
-	box-shadow: $box-shadow-inset;
+	border: 1px $border-color solid;
 }
 
 #typingAreaContainer {
@@ -134,7 +132,7 @@
 	margin-left: 5px;
 }
 
-.collapsed-nav-custom {
+.collapsed-nav-header {
 	height: 45px;
 	margin: 0.5em auto;
 	padding: 0.5em 0;
@@ -170,13 +168,14 @@
 }
 
 .show-nav {
-	height: 121px !important;
-	transition: all 0.3s ease;
+	height: 100% !important;
+	max-height: 161px;
 }
 
 .hide-nav {
-	height: 0 !important;
-	transition: all 0.3s ease;
+	height: auto;
+	max-height: 0;
+	overflow: hidden;
 }
 
 .btn-close:focus,
@@ -207,11 +206,12 @@ hr {
 	}
 
 	.normal-nav-custom {
+		transition: all 0.3s ease;
 		height: 0;
 		overflow: hidden;
 	}
 
-	.collapsed-nav-custom {
+	.collapsed-nav-header {
 		display: inline;
 	}
 

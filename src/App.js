@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import About from './components/About'
+import Experience from './components/Experience'
 import Skillset from './components/Skillset'
 import Portfolio from './components/Portfolio'
 import Footer from './components/Footer'
@@ -31,6 +32,7 @@ function App() {
 				<div className='wrapper flex-grow-1' id='main-content'>
 					<Switch>
 						<Route path='/(/|about|)/' render={(props) => <About {...props} />} />
+						<Route path='/(/|experience|)/' render={(props) => <Experience {...props} />} />
 						<Route path='/(/|skillset|)/' render={(props) => <Skillset {...props} />} />
 						<Route path='/(/|portfolio|)/' render={(props) => <Portfolio {...props} />} />
 					</Switch>

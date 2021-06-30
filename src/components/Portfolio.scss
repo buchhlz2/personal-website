@@ -10,7 +10,7 @@
 .portfolio-item:hover {
 	transition: transform 0.2s ease, box-shadow 0.2s ease;
 	transform: translateY(-4px);
-	box-shadow: 5px 9px 10px rgba(darken($body-bg, 50%), 0.2), -5px -1px 10px rgba($white, 0.4);
+	box-shadow: 5px 9px 10px rgba(darken($body-bg, 50%), 0.15), -5px -1px 10px rgba($white, 0.35);
 }
 
 .portfolio-card-title {
@@ -44,7 +44,6 @@
 }
 
 .portfolio-btn-custom:hover {
-	// color: darken($body-color, 20%) !important;
 	background-color: lighten($gray-300, 5%) !important;
 	box-shadow: none;
 }
