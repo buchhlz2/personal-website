@@ -13,11 +13,6 @@
 	box-shadow: 5px 9px 10px rgba(darken($body-bg, 50%), 0.2), -5px -1px 10px rgba($white, 0.4);
 }
 
-.portfolio-btn {
-	padding: 5px 8px;
-	border-radius: 5px;
-}
-
 .portfolio-card-title {
 	color: darken($body-color, 20%) !important;
 }
@@ -40,20 +35,28 @@
 	background-color: lighten($gray-300, 5%) !important;
 }
 
-.info-btn-custom {
-	color: inherit;
+.portfolio-btn-custom {
+	background-color: $gray-100 !important;
 	border: none;
-	border: 1px $dark !important;
+	text-decoration: none;
+	@include shadow();
 	box-shadow: none;
 }
 
-.info-btn-custom:hover {
+.portfolio-btn-custom:hover {
 	// color: darken($body-color, 20%) !important;
-	background-color: lighten($body-color, 20%) !important;
+	background-color: lighten($gray-300, 5%) !important;
 	box-shadow: none;
 }
-.info-btn-custom:focus,
-.info-btn-custom:active .btn-close:focus,
+
+.portfolio-close-btn {
+	padding: 5px 10px;
+	border-radius: 5px;
+}
+
+.portfolio-btn-custom:focus,
+.portfolio-btn-custom:active,
+.btn-close:focus,
 .btn-close:active {
 	box-shadow: none;
 }

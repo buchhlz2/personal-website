@@ -10,7 +10,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const PortfolioItem = (props) => {
 	const langageIcon = (iconName) => {
-		switch (iconName.toLowerCase()) {
+		switch (iconName.toLowerCase().replace(/[^\w]/, '')) {
 			case 'javascript':
 				return faJs
 			case 'nodejs':
@@ -24,6 +24,21 @@ const PortfolioItem = (props) => {
 		}
 	}
 
+	const extensionConverter = (language) => {
+		switch (language.toLowerCase().replace(/[^\w]/, '')) {
+			case 'javascript':
+				return 'js'
+			case 'nodejs':
+				return 'js'
+			case 'react':
+				return 'js'
+			case 'solidity':
+				return 'sol'
+			default:
+				return ''
+		}
+	}
+
 	return (
 		<>
 			<div className='card p-3 portfolio-item mx-auto'>
@@ -31,16 +46,16 @@ const PortfolioItem = (props) => {
 					<h5 className='portfolio-card-title'>{props.name}</h5>
 					<p className='card-text'>{props.caption}</p>
 					<div className='row'>
-						<div className='col text-center'>
+						<div className='col text-center mt-1'>
 							<a
 								className='badge bg-light badge-custom'
-								href={`https://github.com/buchhlz2/${props.name}`}
+								href={`https://github.com/buchhlz2/${props.githubRepo}`}
 								target=' _blank'
 							>
 								View on <FontAwesomeIcon icon={faGithub} />
 							</a>
 						</div>
-						<div className='col text-center'>
+						<div className='col text-center mt-1'>
 							<a className='badge badge-custom bg-light' href={props.demoUrl} target=' _blank'>
 								Live demo
 							</a>
@@ -55,7 +70,9 @@ const PortfolioItem = (props) => {
 								<div className='me-2 align-self-center' key={key++}>
 									<a
 										className=''
-										href={`https://github.com/buchhlz2/${props.name}/search?l=${language}`}
+										href={`https://github.com/buchhlz2/${props.githubRepo}/search?q=extension:${extensionConverter(
+											language
+										)}`}
 										target=' _blank'
 										key={props.index}
 									>
@@ -69,11 +86,12 @@ const PortfolioItem = (props) => {
 						<div className='d-flex flex-row justify-content-end h-100'>
 							<div className='me-2 align-self-center'>
 								<button
-									className='btn m-0 py-0 px-2 info-btn-custom'
+									className='btn m-0 py-0 px-2 portfolio-btn-custom'
 									data-bs-toggle='modal'
 									data-bs-target={`#portfolio-item-modal-${props.index}`}
+									style={{ fontSize: '12px' }}
 								>
-									<FontAwesomeIcon icon={faInfoCircle} className='' />
+									Details <FontAwesomeIcon icon={faInfoCircle} className='' />
 								</button>
 							</div>
 						</div>

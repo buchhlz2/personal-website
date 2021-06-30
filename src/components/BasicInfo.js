@@ -7,7 +7,7 @@ const BasicInfo = (props) => {
 		const typingArea = document.querySelector('#typingArea')
 		init(typingArea, {
 			showCursor: false,
-			strings: ['fullstack engineer', 'physics nerd', 'crypto altruist', 'health fanatic', 'biohacker'],
+			strings: ['full-stack engineer', 'physics nerd', 'crypto altruist', 'health fanatic', 'biohacker'],
 		})
 	}, [])
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 const PortfolioModal = (props) => {
 	const languages = (langs) => {
-		return `${langs.slice(0, langs.length - 1).join(', ')}, & ${langs[langs.length - 1]}`
+		return `${langs.slice(0, langs.length - 1).join(', ')} & ${langs[langs.length - 1]}`
 	}
 
 	return (
@@ -28,7 +28,7 @@ const PortfolioModal = (props) => {
 									<div className='col-md-12'>
 										<img src={props.img} className='card-img' alt='project-pic' />
 									</div>
-									<div className='col-md-12'>
+									<div className='col-md-12 mt-2'>
 										<p>
 											<small>{props.description}</small>
 										</p>
@@ -42,7 +42,11 @@ const PortfolioModal = (props) => {
 							</div>
 						</div>
 						<div className='modal-footer'>
-							<button type='button' className='btn btn-secondary portfolio-btn' data-bs-dismiss='modal'>
+							<button
+								type='button'
+								className='btn btn-secondary portfolio-btn-custom portfolio-close-btn'
+								data-bs-dismiss='modal'
+							>
 								Close
 							</button>
 						</div>
