@@ -70,7 +70,7 @@
 	white-space: nowrap; /* Keeps the content on a single line */
 	display: inline-block;
 	background-color: $white;
-	border: 1px solid $gray-400;
+	border: 1.5px solid $border-color;
 	padding: 0.4em;
 	border-radius: $border-radius-pill;
 	margin: 20px auto 0 auto;
@@ -90,7 +90,7 @@
 	display: inline-block;
 	height: 1.1em;
 	vertical-align: middle;
-	border-right: 0.4em solid $gray-700; /* The typwriter cursor */
+	border-right: 0.4em solid $gray-900; /* The typwriter cursor */
 	letter-spacing: 0.4em;
 	animation: blink-caret 0.75s step-end infinite;
 }
@@ -102,7 +102,7 @@
 		border-color: transparent;
 	}
 	50% {
-		border-color: $gray-700;
+		border-color: $gray-900;
 	}
 }
 
@@ -130,6 +130,10 @@
 	left: 0;
 	padding: 3px 0;
 	margin-left: 5px;
+}
+
+#pronounciation {
+	color: $gray-600;
 }
 
 .collapsed-nav-header {

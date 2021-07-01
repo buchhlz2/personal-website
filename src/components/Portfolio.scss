@@ -27,11 +27,15 @@
 
 .badge-custom {
 	text-decoration: none;
+	color: $gray-900 !important;
+	background-color: $gray-300 !important;
+	font-size: 14px;
 	@include shadow();
 	box-shadow: none;
 }
 
 .badge-custom:hover {
+	color: lighten($gray-900, 15%) !important;
 	background-color: lighten($gray-300, 5%) !important;
 }
 
