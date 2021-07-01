@@ -10,6 +10,7 @@
 .header-social-icons {
 	cursor: pointer;
 	transition: all 0.1s ease-in-out;
+	color: $gray-600;
 }
 
 .social-link,
@@ -135,6 +136,10 @@
 
 #pronounciation {
 	color: $gray-600;
+}
+
+nav {
+	background-color: lighten($gray-100, 2%);
 }
 
 .collapsed-nav-header {

@@ -7,7 +7,7 @@ $font-family-sans-serif: 'Raleway', Helvetica, sans-serif;
 @import url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:200,300,400,700);
 
 @import './_variables';
-$body-bg: $gray-100;
+$body-bg: lighten($gray-100, 2%);
 $body-color: $dark;
 $nav-link-hover-color: $gray-800;
 

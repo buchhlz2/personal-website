@@ -27,6 +27,13 @@ const Skillset = (props) => {
 		{ icon: SiGraphql, color: '#0064a5', language: 'GraphQL' },
 	]
 
+	const skills = [
+		'Full-stack generalist — can build the UI to render data or help create backend APIs to get it there',
+		'Polyglot with primary experience using JavaScript & React',
+		'Experience with early stage startups & strong understanding of building user-centric products',
+		"Foundation in engineering principles & problem solving — throw anything at me, and I'll figure it out",
+	]
+
 	return (
 		<div className='container-fluid'>
 			<div className='row'>
@@ -39,18 +46,9 @@ const Skillset = (props) => {
 							</div>
 							<div className='d-flex justify-content-left flex-wrap mt-4 pe-5'>
 								<ul className='skillset-list'>
-									<li className='mb-1'>
-										Full-stack generalist &#8212; can render & style data in the UI or help build backend APIs to get it
-										there
-									</li>
-									<li className='mb-1'>Polyglot with the most experience using JavaScript & React</li>
-									<li className='mb-1'>
-										Background in software startups & strong understanding of building user-centric products
-									</li>
-									<li className='mb-1'>
-										Foundation in engineering principles & problem solving &#8212; throw anything at me, and I'll figure
-										it out
-									</li>
+									{skills.map((skill) => (
+										<li className='mb-1'>{skill}</li>
+									))}
 								</ul>
 							</div>
 						</div>

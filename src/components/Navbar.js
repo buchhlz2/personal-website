@@ -62,7 +62,7 @@ const Navbar = (props) => {
 	}
 
 	return (
-		<nav className='bg-light fixed-top'>
+		<nav className='fixed-top'>
 			<div className='row'>
 				<div className='collapsed-nav-header text-center' ref={collapsedNavMenu}>
 					<button onClick={navCollapsedClickHandler} id='nav-toggle-btn' ref={navToggleIcon}>
