@@ -1,24 +1,42 @@
 import React from 'react'
 import PortfolioModal from './PortfolioModal'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
-import { faJs } from '@fortawesome/free-brands-svg-icons'
-import { faNodeJs } from '@fortawesome/free-brands-svg-icons'
-import { faReact } from '@fortawesome/free-brands-svg-icons'
-import { faEthereum } from '@fortawesome/free-brands-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { FaInfoCircle, FaGithub } from 'react-icons/fa'
+import {
+	SiTypescript,
+	SiJavascript,
+	SiReact,
+	SiPostgresql,
+	SiGraphql,
+	SiEthereum,
+	SiNodeDotJs,
+	SiNextDotJs,
+	SiPython,
+	SiRuby,
+} from 'react-icons/si'
 
 const PortfolioItem = (props) => {
-	const langageIcon = (iconName) => {
+	const languageIcon = (iconName) => {
 		switch (iconName.toLowerCase().replace(/[^\w]/, '')) {
 			case 'javascript':
-				return faJs
+				return <SiJavascript />
+			case 'typescript':
+				return <SiTypescript />
 			case 'nodejs':
-				return faNodeJs
+				return <SiNodeDotJs />
+			case 'nextjs':
+				return <SiNextDotJs />
 			case 'react':
-				return faReact
+				return <SiReact />
 			case 'solidity':
-				return faEthereum
+				return <SiEthereum />
+			case 'postgresql':
+				return <SiPostgresql />
+			case 'graphql':
+				return <SiGraphql />
+			case 'python':
+				return <SiPython />
+			case 'ruby':
+				return <SiRuby />
 			default:
 				return ''
 		}
@@ -45,20 +63,24 @@ const PortfolioItem = (props) => {
 				<div className='card-body'>
 					<h5 className='portfolio-card-title'>{props.name}</h5>
 					<p className='card-text'>{props.caption}</p>
-					<div className='row'>
+					<div className='d-flex flex-row align-middle justify-content-center'>
 						<div className='col text-center mt-1'>
-							<a
-								className='badge bg-light badge-custom'
-								href={`https://github.com/buchhlz2/${props.githubRepo}`}
-								target=' _blank'
-							>
-								View on <FontAwesomeIcon icon={faGithub} />
-							</a>
+							<div className='d-flex flex-row align-middle  justify-content-center'>
+								<a
+									className='badge bg-light badge-custom d-flex flex-row align-middle'
+									href={`https://github.com/buchhlz2/${props.githubRepo}`}
+									target=' _blank'
+								>
+									View on <FaGithub className='ms-1 align-self-center' />
+								</a>
+							</div>
 						</div>
 						<div className='col text-center mt-1'>
-							<a className='badge badge-custom bg-light' href={props.demoUrl} target=' _blank'>
-								Live demo
-							</a>
+							<div className='d-flex flex-row align-middle  justify-content-center'>
+								<a className='badge badge-custom bg-light' href={props.demoUrl} target=' _blank'>
+									Live demo
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -76,7 +98,7 @@ const PortfolioItem = (props) => {
 										target=' _blank'
 										key={props.index}
 									>
-										<FontAwesomeIcon icon={langageIcon(language)} />
+										{languageIcon(language)}
 									</a>
 								</div>
 							))}
@@ -84,16 +106,14 @@ const PortfolioItem = (props) => {
 					</div>
 					<div className='col'>
 						<div className='d-flex flex-row justify-content-end h-100'>
-							<div className='me-2 align-self-center'>
-								<button
-									className='btn m-0 py-0 px-2 portfolio-btn-custom'
-									data-bs-toggle='modal'
-									data-bs-target={`#portfolio-item-modal-${props.index}`}
-									style={{ fontSize: '12px' }}
-								>
-									Details <FontAwesomeIcon icon={faInfoCircle} className='' />
-								</button>
-							</div>
+							<button
+								className='btn m-0 py-1 px-2 portfolio-btn-custom d-flex flex-row align-middle'
+								data-bs-toggle='modal'
+								data-bs-target={`#portfolio-item-modal-${props.index}`}
+								style={{ fontSize: '12px' }}
+							>
+								Details <FaInfoCircle className='ms-1 align-self-center' />
+							</button>
 						</div>
 					</div>
 				</div>

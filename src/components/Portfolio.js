@@ -11,7 +11,7 @@ const portfolioItems = [
 		url: 'https://github.com/buchhlz2/',
 		caption: 'caption',
 		description: 'description',
-		languages: ['NodeJS', 'JavaScript', 'React'],
+		languages: ['TypeScript', 'Next.js', 'PostgresQL', 'GraphQL'],
 		demoUrl: '',
 		img: 'https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_1280.jpg',
 	},
