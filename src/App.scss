@@ -1,6 +1,7 @@
 // import custom bootstrap & component-specific styles
 @import 'styles/_custom.scss';
 @import 'components/Portfolio.scss';
+@import 'components/Skillset.scss';
 
 #main-content {
 	margin-top: 165px;
@@ -192,7 +193,7 @@
 }
 
 hr {
-	border-top: 1px $text-muted solid;
+	border-top: 1px $gray-800 solid;
 }
 
 @keyframes fadein {

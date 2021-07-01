@@ -1,0 +1,15 @@
+.skillset-logo {
+	display: inline-flex;
+	padding: 1rem;
+	margin: 0 5px 15px 5px;
+	font-size: 200%;
+	vertical-align: middle;
+	border-radius: 100% !important;
+	border: 1px solid $border-color !important;
+	box-shadow: $box-shadow;
+	background-color: $white;
+}
+
+.skillset-list {
+	font-size: 120%;
+}
