@@ -8,8 +8,8 @@ import portfolioWebsiteGif from '../images/demos/portfolio-website.gif'
 const portfolioItems = [
 	{
 		name: 'Personal Website',
-		github_repo: 'personal-website',
-		url: 'https://github.com/buchhlz2/personal-website',
+		github_repo: 'buchhlz2.github.io',
+		url: 'https://github.com/buchhlz2/buchhlz2.github.io',
 		caption: 'Project can be used to display basic personal info & portfolio...aka this very website.',
 		description:
 			'Personal website & portfolio, built with React. I prefer to keep things simple and remove all of the noise — this is exactly what this website is. Clean and simple.',
