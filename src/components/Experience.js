@@ -21,7 +21,7 @@ const Experience = (props) => {
 													</small>
 												</p>
 
-												<ul>
+												<ul className='mb-0'>
 													<li>Technical lead for sales engagements</li>
 													<li>Scoped, demoed, and managed integrations during POCs</li>
 												</ul>
@@ -45,7 +45,7 @@ const Experience = (props) => {
 													<small>Sept. 2015 - Oct. 2017</small>
 												</p>
 
-												<ul>
+												<ul className='mb-0'>
 													<li>Created IoT strategy for a Fortune 50 automotive manufacturer</li>
 												</ul>
 											</div>
@@ -76,7 +76,7 @@ const Experience = (props) => {
 													</small>
 												</p>
 
-												<ul>
+												<ul className='mb-0'>
 													<li>Open to frontend/backend/full-stack opportunities</li>
 												</ul>
 											</div>
@@ -101,7 +101,7 @@ const Experience = (props) => {
 													</small>
 												</p>
 
-												<ul>
+												<ul className='mb-0'>
 													<li>Began as Ops Assoc.; promoted to Ops Trainer / Mgr.</li>
 													<li>Onboarded new client integrations & acted as initial line of support</li>
 												</ul>

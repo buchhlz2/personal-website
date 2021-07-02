@@ -110,6 +110,7 @@
 }
 
 #resume-btn {
+	@include shadow();
 	border: 1px $border-color solid;
 	background-color: $white;
 	border-radius: 5px;
@@ -117,16 +118,10 @@
 	box-shadow: none;
 	width: 150px;
 	margin: 20px auto 0 auto;
-	a {
-		text-decoration: none;
-		color: $dark;
-	}
 }
 
 #resume-btn:hover {
-	a {
-		color: $dark;
-	}
+	background-color: $gray-100;
 }
 
 #resume-btn:active {

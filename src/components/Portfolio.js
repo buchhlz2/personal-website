@@ -3,17 +3,19 @@ import PortfolioItem from './PortfolioItem'
 import decentrastackGif from '../images/demos/decentrastack.gif'
 import crytpokittiesGif from '../images/demos/cryptokitties.gif'
 import logoFinderGif from '../images/demos/logo-finder.gif'
+import portfolioWebsiteGif from '../images/demos/portfolio-website.gif'
 
 const portfolioItems = [
 	{
-		name: 'name',
-		github_repo: 'name',
-		url: 'https://github.com/buchhlz2/',
-		caption: 'caption',
-		description: 'description',
-		languages: ['TypeScript', 'Next.js', 'PostgresQL', 'GraphQL'],
-		demoUrl: '',
-		img: 'https://cdn.pixabay.com/photo/2016/03/26/13/09/cup-of-coffee-1280537_1280.jpg',
+		name: 'Personal Website',
+		github_repo: 'personal-website',
+		url: 'https://github.com/buchhlz2/personal-website',
+		caption: 'Project can be used to display basic personal info & portfolio...aka this very website.',
+		description:
+			'Personal website & portfolio, built with React. I prefer to keep things simple and remove all of the noise — this is exactly what this website is. Clean and simple.',
+		languages: ['JavaScript', 'React'],
+		demoUrl: 'https://danbuchholz.com',
+		img: portfolioWebsiteGif,
 	},
 	{
 		name: 'decentraStack',

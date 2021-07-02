@@ -33,11 +33,11 @@ const BasicInfo = (props) => {
 					</div>
 				</div>
 				<div className='row'>
-					<button className='btn' id='resume-btn'>
-						<a href='https://drive.google.com/file/d/1A-hcR9Qp1hUU_pUgriWzKyNg1xONSiub/view' target=' _blank'>
+					<a href='https://drive.google.com/file/d/1A-hcR9Qp1hUU_pUgriWzKyNg1xONSiub/view' target=' _blank'>
+						<button className='btn' id='resume-btn'>
 							Resume
-						</a>
-					</button>
+						</button>
+					</a>
 				</div>
 			</div>
 		</div>
