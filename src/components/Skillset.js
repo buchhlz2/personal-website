@@ -46,8 +46,10 @@ const Skillset = (props) => {
 							</div>
 							<div className='d-flex justify-content-left flex-wrap mt-4 pe-5'>
 								<ul className='skillset-list'>
-									{skills.map((skill) => (
-										<li className='mb-1'>{skill}</li>
+									{skills.map((skill, key = 0) => (
+										<li className='mb-1' key={key++}>
+											{skill}
+										</li>
 									))}
 								</ul>
 							</div>

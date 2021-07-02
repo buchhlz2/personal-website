@@ -43,18 +43,33 @@ const PortfolioItem = (props) => {
 	}
 
 	const extensionConverter = (language) => {
+		let query = '/search?q=extension:'
 		switch (language.toLowerCase().replace(/[^\w]/, '')) {
 			case 'javascript':
-				return 'js'
 			case 'nodejs':
-				return 'js'
+			case 'nextjs':
 			case 'react':
-				return 'js'
+				query += 'js'
+				break
+			case 'typescript':
+				query += 'ts'
+				break
 			case 'solidity':
-				return 'sol'
+				query += 'sol'
+				break
+			case 'python':
+				query += 'py'
+				break
+			case 'ruby':
+				query += 'rb'
+				break
+			case 'graphql':
+				query += 'graphql'
+				break
 			default:
 				return ''
 		}
+		return query
 	}
 
 	return (
@@ -92,9 +107,7 @@ const PortfolioItem = (props) => {
 								<div className='me-2 align-self-center' key={key++}>
 									<a
 										className=''
-										href={`https://github.com/buchhlz2/${props.githubRepo}/search?q=extension:${extensionConverter(
-											language
-										)}`}
+										href={`https://github.com/buchhlz2/${props.githubRepo}${extensionConverter(language)}`}
 										target=' _blank'
 										key={props.index}
 									>

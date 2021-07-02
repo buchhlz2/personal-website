@@ -1,0 +1,52 @@
+.timeline-card {
+	background-color: $white;
+	-webkit-box-shadow: $box-shadow;
+	-moz-box-shadow: $box-shadow;
+	box-shadow: $box-shadow;
+	border: 1px solid $border-color;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timeline-card-title {
+	color: darken($body-color, 20%) !important;
+}
+
+.timeline-horizontal {
+	border-right: 2px dotted $gray-800;
+}
+
+.timeline-vertical-border {
+	border-right: 4px solid $gray-600;
+}
+
+.timeline-item-left {
+	margin-top: 25px;
+}
+
+.timeline-item-right {
+	margin-top: 15px;
+}
+
+.experience-lg-hide {
+	height: 0;
+	overflow: hidden;
+}
+
+@include media-breakpoint-down(lg) {
+	.experience-lg-hide {
+		height: auto;
+	}
+
+	.experience-lg-show {
+		display: none;
+	}
+
+	.timeline-vertical {
+		display: none;
+	}
+
+	.timeline-horizontal {
+		display: none;
+		border: none;
+	}
+}

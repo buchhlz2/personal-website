@@ -33,7 +33,7 @@ const portfolioItems = [
 		caption:
 			'A simple dApp that allows you to query the CryptoKitties smart contract and retrieve a basic set of live contract data.',
 		description:
-			'The CryptoKitties analyzer is built to query the Ethereum mainnet (using web3.js) and return a few live datapoints. Namely, input a starting / ending block, and data the matron with the most "births" during that period will be caculated & returned, along with other data about that specific matron. For best results, query in small block ranges (e.g., from 6600000 to 7000000 may take some time to query data due to Infura node rate limiting).',
+			'The CryptoKitties analyzer is built to query the Ethereum mainnet (using web3.js) and return a few live datapoints. Namely, input a starting / ending block, and data the matron with the most "births" during that period will be caculated & returned, along with other data about that specific matron. For best results, query in small block ranges (e.g., from 6600000 to 7000000 may take some time to query data due to Infura\'s rate limiting policy).',
 		languages: ['JavaScript', 'React'],
 		demoUrl: 'https://angry-carson-3ff31e.netlify.app/',
 		img: crytpokittiesGif,
