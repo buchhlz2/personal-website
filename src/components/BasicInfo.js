@@ -32,6 +32,13 @@ const BasicInfo = (props) => {
 						</div>
 					</div>
 				</div>
+				<div className='row'>
+					<button className='btn' id='resume-btn'>
+						<a href='https://drive.google.com/file/d/1A-hcR9Qp1hUU_pUgriWzKyNg1xONSiub/view' target=' _blank'>
+							Resume
+						</a>
+					</button>
+				</div>
 			</div>
 		</div>
 	)

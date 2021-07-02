@@ -109,6 +109,30 @@
 	}
 }
 
+#resume-btn {
+	border: 1px $border-color solid;
+	background-color: $white;
+	border-radius: 5px;
+	margin-top: 15px;
+	box-shadow: none;
+	width: 150px;
+	margin: 20px auto 0 auto;
+	a {
+		text-decoration: none;
+		color: $dark;
+	}
+}
+
+#resume-btn:hover {
+	a {
+		color: $dark;
+	}
+}
+
+#resume-btn:active {
+	box-shadow: inset 2px 2px 6px rgba(darken($body-bg, 50%), 0.2), inset -3px -2px 4px rgba($white, 0.2);
+}
+
 #about-me-card {
 	-webkit-box-shadow: $box-shadow;
 	-moz-box-shadow: $box-shadow;
@@ -162,7 +186,7 @@ nav {
 	background-color: inherit;
 	color: $link-color;
 	position: absolute;
-	left: 0;
+	left: 5px;
 }
 
 #nav-toggle-btn:hover {

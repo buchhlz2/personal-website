@@ -106,7 +106,6 @@ const PortfolioItem = (props) => {
 							{props.languages.map((language, key = 0) => (
 								<div className='me-2 align-self-center' key={key++}>
 									<a
-										className=''
 										href={`https://github.com/buchhlz2/${props.githubRepo}${extensionConverter(language)}`}
 										target=' _blank'
 										key={props.index}
