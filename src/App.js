@@ -4,6 +4,7 @@ import Experience from './components/Experience'
 import Skillset from './components/Skillset'
 import Portfolio from './components/Portfolio'
 import Footer from './components/Footer'
+import NotFoundError from './components/NotFoundError'
 import { Route, Switch } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
@@ -35,6 +36,7 @@ function App() {
 						<Route path='/(/|skillset|)/' render={(props) => <Skillset {...props} />} />
 						<Route path='/(/|experience|)/' render={(props) => <Experience {...props} />} />
 						<Route path='/(/|portfolio|)/' render={(props) => <Portfolio {...props} />} />
+						<Route render={(props) => <NotFoundError {...props} />} />
 					</Switch>
 				</div>
 				<Footer />
