@@ -80,7 +80,7 @@ const PortfolioItem = (props) => {
 					<p className='card-text'>{props.caption}</p>
 					<div className='d-flex flex-row align-middle justify-content-center'>
 						<div className='col text-center mt-1'>
-							<div className='d-flex flex-row align-middle  justify-content-center'>
+							<div className='d-flex flex-row align-middle justify-content-between'>
 								<a
 									className='badge bg-light badge-custom d-flex flex-row align-middle'
 									href={`https://github.com/buchhlz2/${props.githubRepo}`}
@@ -88,10 +88,6 @@ const PortfolioItem = (props) => {
 								>
 									View on <FaGithub className='ms-1 align-self-center' />
 								</a>
-							</div>
-						</div>
-						<div className='col text-center mt-1'>
-							<div className='d-flex flex-row align-middle  justify-content-center'>
 								<a className='badge badge-custom bg-light' href={props.demoUrl} target=' _blank'>
 									Live demo
 								</a>

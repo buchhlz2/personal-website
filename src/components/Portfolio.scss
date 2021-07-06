@@ -32,6 +32,8 @@
 	font-size: 14px;
 	@include shadow();
 	box-shadow: none;
+	margin-left: 30px;
+	margin-right: 30px;
 }
 
 .badge-custom:hover {
@@ -62,4 +64,19 @@
 .btn-close:focus,
 .btn-close:active {
 	box-shadow: none;
+}
+
+@include media-breakpoint-down(lg) {
+	.badge-custom {
+		padding: 10px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	.badge-custom {
+		font-size: 13px;
+		padding: 8px;
+	}
 }
