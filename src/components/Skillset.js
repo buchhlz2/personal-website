@@ -30,7 +30,7 @@ const Skillset = (props) => {
 	const skills = [
 		'History with early stage startups & strong understanding of building user-centric products',
 		'Primary experience with leading cross-functional efforts across product, engineering, sales, ops',
-		'Polyglot with full-stack knowledge; experience developing the frontend (e.g., JavaScript, React) and understanding of strongly-typed languages / backend paradigms (e.g., Solidity, Go)',
+		'Polyglot with full-stack knowledge, including frontend development (e.g., JavaScript, React) and understanding of strongly-typed languages / backend paradigms (e.g., Solidity, Go)',
 		"Foundation in engineering principles & problem solving — throw anything at me, and I'll figure it out",
 	]
 

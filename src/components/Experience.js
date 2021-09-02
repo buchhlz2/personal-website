@@ -17,7 +17,7 @@ const Experience = (props) => {
 													<small>FourKites, Inc.</small>
 													<br />
 													<small>
-														<i>Apr. 2016 - Jan. 2021</i>
+														<i>Apr. 2017 - Jan. 2021</i>
 													</small>
 												</p>
 
@@ -44,7 +44,7 @@ const Experience = (props) => {
 												<p className='card-text'>
 													<small>Hitachi Consulting</small>
 													<br />
-													<small>Sept. 2015 - Oct. 2017</small>
+													<small>Sept. 2015 - Oct. 2016</small>
 												</p>
 
 												<ul className='mb-0'>
@@ -79,7 +79,10 @@ const Experience = (props) => {
 												</p>
 
 												<ul className='mb-0'>
-													<li>Open to opportunities</li>
+													<li>
+														Open to opportunities across any of the interests mentioned in the{' '}
+														<a href='#/about'> about</a> page where my <a href='#/skillset'> skillset</a> applies
+													</li>
 												</ul>
 											</div>
 										</div>
@@ -121,7 +124,7 @@ const Experience = (props) => {
 						<div className='col-10 mx-auto'>
 							<div className='card timeline-card'>
 								<div className='card-body'>
-									<h5 className='timeline-card-title'>Software Engineer</h5>
+									<h5 className='timeline-card-title'>TBD</h5>
 									<p className='card-text'>
 										<small>TBD</small>
 										<br />
@@ -131,7 +134,10 @@ const Experience = (props) => {
 									</p>
 
 									<ul>
-										<li>Open to frontend/backend/full-stack opportunities</li>
+										<li>
+											Open to opportunities across any of the interests mentioned in the <a href='#/about'> about</a>{' '}
+											page where my <a href='#/skillset'> skillset</a> applies
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -146,13 +152,13 @@ const Experience = (props) => {
 										<small>FourKites, Inc.</small>
 										<br />
 										<small>
-											<i>Apr. 2016 - Jan. 2021</i>
+											<i>Apr. 2017 - Jan. 2021</i>
 										</small>
 									</p>
 
 									<ul>
-										<li>Technical lead for sales engagements</li>
-										<li>Scoped, demoed, and managed integrations during POCs</li>
+										<li>Technical lead for pre-sales engagements</li>
+										<li>Managed integrations, ran POCs, and led cross-functional efforts to ensure client success</li>
 									</ul>
 								</div>
 							</div>
@@ -187,7 +193,7 @@ const Experience = (props) => {
 									<p className='card-text'>
 										<small>Hitachi Consulting</small>
 										<br />
-										<small>Sept. 2015 - Oct. 2017</small>
+										<small>Sept. 2015 - Oct. 2016</small>
 									</p>
 
 									<ul>
