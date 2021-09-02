@@ -58,7 +58,7 @@ const About = (props) => {
 											and self-taught programmer."
 										</p>
 										<p>
-											<b>INTERESTS</b>="Intrigued by physics, biohacking, crypto, the Universe, math, food science,
+											<b>INTERESTS</b>="Intrigued by crypto, biohacking, physics, the Universe, math, food science,
 											fitness, and music. Essentially, a slight obsession with 'the science of' why things exist as they
 											do."
 										</p>

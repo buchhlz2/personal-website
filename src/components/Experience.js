@@ -22,8 +22,10 @@ const Experience = (props) => {
 												</p>
 
 												<ul className='mb-0'>
-													<li>Technical lead for sales engagements</li>
-													<li>Scoped, demoed, and managed integrations during POCs</li>
+													<li>Technical lead for pre-sales engagements</li>
+													<li>
+														Managed integrations, ran POCs, and led cross-functional efforts to ensure client success
+													</li>
 												</ul>
 											</div>
 										</div>
@@ -67,7 +69,7 @@ const Experience = (props) => {
 									<div className='d-flex justify-content-start'>
 										<div className='card timeline-card'>
 											<div className='card-body'>
-												<h5 className='timeline-card-title'>Software Engineer</h5>
+												<h5 className='timeline-card-title'>TBD</h5>
 												<p className='card-text'>
 													<small>TBD</small>
 													<br />
@@ -77,7 +79,7 @@ const Experience = (props) => {
 												</p>
 
 												<ul className='mb-0'>
-													<li>Open to frontend/backend/full-stack opportunities</li>
+													<li>Open to opportunities</li>
 												</ul>
 											</div>
 										</div>
